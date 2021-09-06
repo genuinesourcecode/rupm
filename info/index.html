@@ -1,56 +1,144 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>GSCode Update Info</title>
-    </head>
-    <body>
-        <style type="text/css">
-            body{
-                background: #E5E9EC;
-                font-family: arial;
-                color: #444;
-            }
-            .container{
-                max-width: 700px;
-                margin: auto;
-                padding: 15px;
-                background-color: #fff;
-            }
-            pre{
-                background-color: #f5f5f5; 
-                background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f5f5f5), color-stop(50%, #e6e6e6)); 
-                background-image: -webkit-linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
-                background-image: linear-gradient(#f5f5f5 50%,#e6e6e6 50%); 
-                background-size: 38px 38px;
-                border: 1px solid #eee;
-                display: block;
-                line-height: 19px;
-                margin-bottom: 10px;
-                overflow: visible;
-                overflow-y: hidden;
-                padding: 0 0 0 4px;
-                margin-top: 5px;
-            }
-			.red-color{
-				 background-color: #f06c71;
-				 color:#fff;
-				 padding:10px;
-			}
-            
-        </style>
 
-        <div class="container">
-		<p class="red-color"><b>Important</b>: Please backup your database and files before starting the installation and remove the upgrade script from your server /updates/[versions] after installation.</p>
-		<p> If you face any problem during upgrade, please make sure the whole directory is 'writable'. You can revert the permissions after installation. </p>
-                <p> If you are using any database prefix, you have to change the upgrade script manually before installation (/updates/[version]/upgrade-version.sql). </p>
-                <br />
-                <p> If you prefer to update it manually, please find the updates in your server in /updates directory then copy and paste the files and execute the upgrade sql in your database. </p>
-		<br />
-                <h3>Change Log</h3>
-                
-                <strong>Version 2.7.1 - 14 April, 2021 </strong>
-                <pre>
+<head>
+    <title>GSCode Update Info</title>
+</head>
+
+<body>
+    <style type="text/css">
+        body {
+            background: #E5E9EC;
+            font-family: arial;
+            color: #444;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        pre {
+            background-color: #f5f5f5;
+            background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f5f5f5), color-stop(50%, #e6e6e6));
+            background-image: -webkit-linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
+            background-image: linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
+            background-size: 38px 38px;
+            border: 1px solid #eee;
+            display: block;
+            line-height: 19px;
+            margin-bottom: 10px;
+            overflow: visible;
+            overflow-y: hidden;
+            padding: 0 0 0 4px;
+            margin-top: 5px;
+        }
+
+        .red-color {
+            background-color: #f06c71;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+
+    <div class="container">
+        <p class="red-color"><b>Important</b>: Please backup your database and files before starting the installation
+            and remove the upgrade script from your server /updates/[versions] after installation.</p>
+        <p> If you face any problem during upgrade, please make sure the whole directory is 'writable'. You can revert
+            the permissions after installation. </p>
+        <p> If you are using any database prefix, you have to change the upgrade script manually before installation
+            (/updates/[version]/upgrade-version.sql). </p>
+        <br />
+        <p> If you prefer to update it manually, please find the updates in your server in /updates directory then copy
+            and paste the files and execute the upgrade sql in your database. </p>
+        <br />
+        <h3>Change Log</h3>
+
+        <strong>Version 2.8 - 05 August, 2021</strong>
+        <pre>
+               [Added] Plugin support for GSCODE.			
+                [Added] Implement proposals module.
+                [Added] Add clients overview page.
+                [Added] Option to copy the task comments link.
+                [Added] Option to pin/unpin important task comments.
+                [Added] Time type custom field.
+                [Added] Option to filter by select type custom fields. 
+                [Added] Estimate comments option and settings to enable/disable the comments.
+                [Added] RTL option in user preference.
+                [Added] Option to add notes inside tickets.
+                [Added] Categories for files.
+                [Added] Option to share announcements with different customer groups.
+                [Added] Option for clients to assign tasks to others.
+                [Added] Expenses summary.
+                [Added] Add batch edit option for tickets.
+                [Added] Show the company email address in invoice, estimate and proposal.
+                [Added] Option to create project from orders.
+                [Added] New widget to see total numbers of leads.
+                [Added] Option to show only own estimates which are created by the user.
+                [Added] New permission to access Timeline.
+                [Added] Whatsapp in social links and remove google plus. 
+                [Added] Settings to show tickets tab in projects if anyone enable project reference in tickets.
+                [Added] New permission to edit salary info for team members.
+                [Added] New option to select/un-select all project files at a time.
+                [Added] Conversion rate settings and show the reports of multi currency after conversion.
+                [Added] New sort field in Knowledge base/help articles.
+                [Added] In email template title, support necessary variables.
+                [Added] Custom field support for project files.
+                [Added] New settings page to to assign roles easily.
+                [Added] New notification for manual payment.
+                [Added] Support to use database prefix.
+                [Added] Checklist templates for tasks.
+                [Added] Option to filter clients own tasks.
+                [Added] New configs to fix notification error.
+                [Added] New email template for project completed notification.
+                [Added] Show left menu and login top-bar in internal pages.
+                [Added] Show lead created at field in the list and filter by date range.
+                [Added] New option in task status setting to hide the column from kanban view.
+                [Added] New permission to manage settings team members and roles. 
+                [Added] Signature option on estimate acceptation.
+                [Added] Option add project, project members and tasks one after one.
+                [Added] Settings to add lead from public form.
+                [Added] Option to check mark tasks by clients.
+                [Updated] Left menu re-arranged.
+                [Updated] Settings menu re-arranged.
+                [Updated] Moved add item button after the items list for invoice, estimate and order.
+                [Updated] Full screen modal for the page add/edit modal.
+                [Updated] Timecard note is visible in the timecard list view.
+                [Updated] Setup built in left menu settings.
+                [Updated] For admin, show all projects count in dashboard.
+                [Updated] Don't add duplicate left menu item for parent menu.
+                [Updated] New option in IMAP settings.
+                [Updated] Show note in the timesheets list.
+                [Updated] Upgrade to Bootstrap v5.0.1.
+                [Updated] Password field should not be required in add new team member modal if email detail is not check marked.
+                [Updated] Separated the General settings and add Localization settings.
+                [Updated] Events end date is optional.
+                [Fixed] Decimal separator as comma error.
+                [Fixed] Google calendar events gets duplicated.
+                [Fixed] Google drive attachment in email is not working.
+                [Fixed] Fix error handling for CI4.
+                [Fixed] Broken content issue IMAP tickets. 
+                [Fixed] Error in invoice total.
+                [Fixed] Sticky note save not working if anyone close browser after editing.
+                [Fixed] Notification issue for public estimate request.
+                [Fixed] Large image preview is not working in Firefox.
+                [Fixed] Project task finished notification not working.
+                [Fixed] User gets logged out on after online payment.
+                [Fixed] Bug in event when saving for clients.
+                [Fixed] Bug in left menu scrolling.
+                [Fixed] Bug in viewing client/lead notes.
+                [Fixed] Custom pages shows 404.
+                [Fixed] XSS security issue.
+                [Fixed] Client/lead option is not available for estimate cloning.
+                [Fixed] Tooltip on editor is not working correctly.
+                [Fixed] Push notifications not working in android.
+                [Fixed] Footer in dark mode shows white.
+            </pre>
+
+        <strong>Version 2.7.1 - 14 April, 2021 </strong>
+        <pre>
 [Updated] Save the left menu state in browser cookies
 [Fixed] Some style issues
 [Fixed] Non required custom fields are showing as required
@@ -63,8 +151,8 @@
 [Fixed] Quick action button missing in mobile
 </pre>
 
-				  <strong>Version 2.7 - 29 March, 2021 </strong>
-                <pre>
+        <strong>Version 2.7 - 29 March, 2021 </strong>
+        <pre>
 [Added] Dark mode theme.
 [Updated] Upgraded to Codeigniter 4 from Codeigniter 3.
 [Updated] Upgraded to Bootstrap 5 from Bootstrap 3.
@@ -83,13 +171,13 @@
 [Fixed] All members are not receiving ticket notifications if there is any assignee in ticket.
 [Fixed] Bug in google drive integration
 </pre>
-				
-				  <strong>Version 2.6.2 - 29 March, 2021 </strong>
-                <pre>
+
+        <strong>Version 2.6.2 - 29 March, 2021 </strong>
+        <pre>
 [Added] Added new update page for 2.7
 </pre>
-				  <strong>Version 2.6.1 - 17 November, 2020 </strong>
-                <pre>
+        <strong>Version 2.6.1 - 17 November, 2020 </strong>
+        <pre>
 [Added] Add item categories and category wise filter in sales/store. 
 [Added] Custom field support for clients and leads import
 [Added] Admin should be able to change the owner of the clients.
@@ -112,9 +200,9 @@
 [Fixed] Slack notification doesn't contains links
 [Fixed] Error in projects list filtering
 </pre>
-				
-                 <strong>Version 2.6 - 12 October, 2020 </strong>
-                <pre>
+
+        <strong>Version 2.6 - 12 October, 2020 </strong>
+        <pre>
 [Added] Orders and store module
 [Added] Paytm payment gateway
 [Added] Added some predefined filters in clients list page
@@ -147,8 +235,8 @@
 [Fixed] After costumer reply, the tickets should show the "Client replied" status
 [Fixed] Don't show project comments in the activity log in client side
 </pre>
-                <strong>Version 2.5 - 31 July, 2020 </strong>
-                <pre>
+        <strong>Version 2.5 - 31 July, 2020 </strong>
+        <pre>
 [Added] Integration with Slack
 [Added] Integration with Github
 [Added] Integration with Bitbucket
@@ -208,9 +296,9 @@
 [Fixed] Bug on invoice payments page
 [Fixed] Client can move tasks from kanban view even they don't have permission to edit
 </pre>
-                
-			<strong>Version 2.4 - 18 February, 2020 </strong>				
-			<pre>
+
+        <strong>Version 2.4 - 18 February, 2020 </strong>
+        <pre>
 [Added] Left menu customization option for default app, individual users and clients
 [Added] Global search from topbar (Keyboard shortcut /)
 [Added] New page for task details view
@@ -270,10 +358,10 @@
 [Fixed] Ticket last activity column shows same time for all tickets
 [Fixed] Can't change the email of lead contact
 [Fixed] In the send invoice template, the due date format is not following according to date format setting
-</pre>			
-				
-             <strong>Version 2.3 - 30 August, 2019 </strong>
-            <pre>
+</pre>
+
+        <strong>Version 2.3 - 30 August, 2019 </strong>
+        <pre>
 [Added] Leads module
 [Added] Integrate google calendar.
 [Added] Show project deadline in event calendar with a filter.
@@ -315,15 +403,15 @@
 [Fixed] Imap ticket creation is not working for some emails.
 [Fixed] Scrolling problem in project file comments.
 [Fixed] Team members can't attach document with estimate request.
-</pre>				
-             <strong>Version 2.2.1 - 08 March, 2019 </strong>
-            <pre>
+</pre>
+        <strong>Version 2.2.1 - 08 March, 2019 </strong>
+        <pre>
 [Fixed] Wrong date formating issue in project and todo list. 
 [Fixed] Client can't access tickets.
 [Fixed] Don't show quick access icon if there is no items.
 [Fixed] Invoice design css fixed.</pre>
-                <strong>Version 2.2 - 28 February, 2019 </strong>
-            <pre>				
+        <strong>Version 2.2 - 28 February, 2019 </strong>
+        <pre>
 [Added] Added a new dropdown menu in top bar for quick insert.
 [Added] Integrate google drive as an alternative storage.
 [Added] Option to print invoices from the invoice details view.
@@ -365,11 +453,11 @@
 [Fixed] Can't add link in tasks checklist.
 [Fixed] Announcement saving date format is not working.
 [Fixed] Some other minor bug fixes.</pre>
-                <strong>Version 2.1.1 - 21 September, 2018 </strong>
-            <pre>
+        <strong>Version 2.1.1 - 21 September, 2018 </strong>
+        <pre>
 [Fixed] Tasks list duplicate row issue fixed.</pre>
-<strong>Version 2.1 - 19 September, 2018 </strong>
-            <pre>
+        <strong>Version 2.1 - 19 September, 2018 </strong>
+        <pre>
 [Added] Dashboard customization option for all users.
 [Added] Widget - Open projects list.
 [Added] Widget - Starred projects list.
@@ -409,9 +497,9 @@
 [Fixed] Tasks custom fields change log and notification.
 [Fixed] Copy custom fields on cloning project.
 [Fixed] Gantt timezone issue and UI bug fixed.
-[Fixed] Leave application on event calender timezone issue.</pre>				
-                <strong>Version 2.0.3 - 18 July, 2018 </strong>
-            <pre>
+[Fixed] Leave application on event calender timezone issue.</pre>
+        <strong>Version 2.0.3 - 18 July, 2018 </strong>
+        <pre>
 [Added] Added option to mention project members in project/task comments.
 [Updated] Added new options in notification settings for mentions.
 [Added] Events calender in client portal.
@@ -431,8 +519,8 @@
 [Fixed] Kanban view tasks sorting bug fixed.
 [Fixed] Timesheets list sorting bug fixed.
 [Fixed] Notifications list scrollbar bug fixed.</pre>
-				<strong>Version 2.0.2 - 08 June, 2018 </strong>
-            <pre>
+        <strong>Version 2.0.2 - 08 June, 2018 </strong>
+        <pre>
 [Added] Add tasks from the tasks view.
 [Added] Download multiple files from the projects files list.
 [Updated] Improve usability in mobile devices.
@@ -446,16 +534,16 @@
 [Fixed] PHP 7.2 and MySQL 5.7 compatibility issue solved.
 [Fixed] Tickets list view loading bug fixed.
 [Fixed] Tasks kanban view filter doesn't works.</pre>
-                  <strong>Version 2.0.1 - 07 April, 2018 </strong>
-            <pre>
+        <strong>Version 2.0.1 - 07 April, 2018 </strong>
+        <pre>
 [Added] Added VAT number settings in company info and shown in invoice.
 [Added] Export and print option in items list.
 [Fixed] Added missing checklist cloning with project clone.     
 [Fixed] Notification problem for some servers. 
 [Fixed] Tickets custom field in ticket list view.
 [Fixed] Selected ticket type dropdown in ticket edit modal.</pre>
-                <strong>Version 2.0 - 25 March, 2018 </strong>
-            <pre>
+        <strong>Version 2.0 - 25 March, 2018 </strong>
+        <pre>
 [Added] Income vs expense report
 [Added] Invoice settings for different types of reminders	
 [Added] Email templates for invoice due pre reminder, overdue reminder and cron job invoice creation reminder
@@ -486,11 +574,11 @@
 [Fixed] Don't show the due column in clients if the invoice module is disabled	
 [Fixed] Solved auto complete related browser issue in new user creation form
 [Fixed] Added missing cron job invoice creation notification setting</pre>
-                    <strong>Version 1.9.1 - 05 October, 2017 </strong>
-            <pre>
+        <strong>Version 1.9.1 - 05 October, 2017 </strong>
+        <pre>
 [Fixed] Project status bar and activity log language issue fixed.</pre>
-                    <strong>Version 1.9 - 30 September, 2017 </strong>
-            <pre>
+        <strong>Version 1.9 - 30 September, 2017 </strong>
+        <pre>
 [Added] Client groups.
 [Added] Filter by client group in clients list view.	
 [Added] Custom task status settings.
@@ -515,8 +603,8 @@
 [Fixed] Timecard access permission.
 [Fixed] Timesheet total is wrong in in excel export.
 [Fixed] iPhone scrolling issue fixed.</pre>
-<strong>Version 1.8 - 10 June, 2017 </strong>
-            <pre>
+        <strong>Version 1.8 - 10 June, 2017 </strong>
+        <pre>
 [Added] Todo module.
 [Added] Google reCAPTCHA.
 [Added] Filter by label everywhere (Click on label to filter).
@@ -540,11 +628,11 @@
 [Updated] Notify to only ticket assignee after assigning a ticket.
 [Fixed] Refresh tab height on page resize.
 [Fixed] Timesheet permission bug for team member. 
-[Fixed] Wrong link on comment notification.</pre>		
-<strong>Version 1.7.0.1 - 11 March, 2017 </strong>
-            <pre>[Fixed] Special character bug fixed in items table view.</pre>
-<strong>Version 1.7 - 10 March, 2017 </strong>
-            <pre>
+[Fixed] Wrong link on comment notification.</pre>
+        <strong>Version 1.7.0.1 - 11 March, 2017 </strong>
+        <pre>[Fixed] Special character bug fixed in items table view.</pre>
+        <strong>Version 1.7 - 10 March, 2017 </strong>
+        <pre>
 [Added] Help module for team members.
 [Added] Knowledge base module for public/clients.
 [Added] Recurring invoice (Please check the Settings > Cron Job for instructions).
@@ -578,10 +666,10 @@
 [Updated] Added estimate attachment download option.
 [Fixed] Sticky note does not save on refresh.
 [Fixed] Line missing in invoice graph chart.</pre>
-<strong>Version 1.6.1 - 08 October, 2017 </strong>
-            <pre>[Updated] Update the upgrade script to release 1.7</pre>
-	<strong>Version 1.6 - 10 December, 2016 </strong>
-            <pre>
+        <strong>Version 1.6.1 - 08 October, 2017 </strong>
+        <pre>[Updated] Update the upgrade script to release 1.7</pre>
+        <strong>Version 1.6 - 10 December, 2016 </strong>
+        <pre>
 [Added] Custom fields for clients, contacts, projects, team members and tickets
 [Added] Note and task reference with project timesheet
 [Added] Email notification for messages
@@ -601,11 +689,11 @@
 [Fixed] Sub items are not deleted when deleting the projects
 [Fixed] Invoice dates are wrong in some timezones
 [Fixed] Download zip contains full path for some server</pre>
-			            <strong>Version 1.5.1 - 05 October, 2016 </strong>
-            <pre>
+        <strong>Version 1.5.1 - 05 October, 2016 </strong>
+        <pre>
 [Fixed] Fixed the My Tasks link reference in dashboard</pre>
-			            <strong>Version 1.5 - 03 October, 2016 </strong>
-            <pre>
+        <strong>Version 1.5 - 03 October, 2016 </strong>
+        <pre>
 [Added] Show projects tab in team members profile page
 [Added] Add GANTT chart in project
 [Added] Expenses graphical chart
@@ -626,12 +714,12 @@
 [Fixed] Invoice shows as overdue even after full payment
 [Fixed] Image uploading issue with apostrophe
 [Fixed] MySql error message for some servers</pre>
-			            <strong>Version 1.4.1 - 18 August, 2016 </strong>
-            <pre>
+        <strong>Version 1.4.1 - 18 August, 2016 </strong>
+        <pre>
 [Updated] Upgraded Codeigniter to 3.1.0
 [Fixed] Fixed the private notes visibility security issue</pre>
-			            <strong>Version 1.4 - 17 August, 2016 </strong>
-            <pre>
+        <strong>Version 1.4 - 17 August, 2016 </strong>
+        <pre>
 [Added] Estimate request from client portal
 [Added] Estimate management
 [Added] Clone project
@@ -653,8 +741,8 @@
 [Fixed] Fixed null value issue in project filter list of my tasks page
 [Fixed] Don't show draft invoices to clients
 [Fixed] Fixed deleted clients login issue</pre>
-            <strong>Version 1.3 - 25 June, 2016 </strong>
-            <pre>
+        <strong>Version 1.3 - 25 June, 2016 </strong>
+        <pre>
 [Added] Email notifications
 [Added] Web notifications
 [Fixed] Admin account creation is not working
@@ -668,8 +756,8 @@
 [Added] Redirect to requested page after login
 [Added] Add event calendar language
 [Added] Add project file preview for "pdf", "doc", "docx", "ppt", "pptx", "txt"</pre>
-            <strong>Version 1.2.2 - 06 June, 2016 </strong>
-            <pre>
+        <strong>Version 1.2.2 - 06 June, 2016 </strong>
+        <pre>
 [added] Added expenses in projects and team members.
 [added] Added BCC option in invoice settings and invoice sending modal.
 [added] Added 24 hours time format.
@@ -679,16 +767,16 @@
 [fixed] Project list filter is not working by multi-word.
 [fixed] Deleted invoices are showing in clients section.
 [updated] Improved some usability in user interface.</pre>
-            <strong>Version 1.2.1 - 28 May, 2016 </strong>
-            <pre>
+        <strong>Version 1.2.1 - 28 May, 2016 </strong>
+        <pre>
 [fixed] Scrolling is very slow in mobile device 
 [fixed] Show project price to them who has access to create new projects 
 [fixed] Don't show duplicate labels in project filter list 
 [fixed] Task status color not visible in task list 
 [fixed] Show first day of week in datepicker according to settings
 [updated] Updated some jQuery plugins</pre>
-            <strong>Version 1.2 - 25 May, 2016 </strong>
-            <pre>
+        <strong>Version 1.2 - 25 May, 2016 </strong>
+        <pre>
 [added] Integrate stripe payment method
 [added] Integrate PayPal payment method
 [fixed] Date wise sorting does not works for tasks and milestone
@@ -705,17 +793,18 @@
 [added] Find easily any project by label 
 [updated] Spanish, Portuguese and Dutch language translation
 [updated] Some minor bug fixing and usability improvement</pre>
-            <strong>Version 1.1 - 05 Apr, 2016 </strong>
-            <pre>
+        <strong>Version 1.1 - 05 Apr, 2016 </strong>
+        <pre>
 [Fixed] First name shows twice in message 
 [Fixed] Deleted roles are showing in users role list
 [Fixed] Can't signup for client account 
 [Fixed] Fixed Custom language loading bug 
 [Added] Added ability to upload files with all comments and tickets </pre>
-            <strong>Version 1.0 - 28 Mar, 2016 </strong>
-            <pre>Initial release </pre>
-        </div>
+        <strong>Version 1.0 - 28 Mar, 2016 </strong>
+        <pre>Initial release </pre>
+    </div>
 
 
-    </body>
+</body>
+
 </html>
