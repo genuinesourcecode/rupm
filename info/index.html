@@ -1,49 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>GSCode Update Info</title>
-  </head>
-  <body>
-    <style type="text/css">
-      body {
-        background: #E5E9EC;
-        font-family: arial;
-        color: #444;
-      }
 
-      .container {
-        max-width: 700px;
-        margin: auto;
-        padding: 15px;
-        background-color: #fff;
-      }
+<head>
+      <title>GSCode Update Info</title>
+</head>
 
-      pre {
-        background-color: #f5f5f5;
-        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f5f5f5), color-stop(50%, #e6e6e6));
-        background-image: -webkit-linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
-        background-image: linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
-        background-size: 38px 38px;
-        border: 1px solid #eee;
-        display: block;
-        line-height: 19px;
-        margin-bottom: 10px;
-        overflow: visible;
-        overflow-y: hidden;
-        padding: 0 0 0 4px;
-        margin-top: 5px;
-      }
+<body>
+      <style type="text/css">
+            body {
+                  background: #E5E9EC;
+                  font-family: arial;
+                  color: #444;
+            }
 
-      .red-color {
-        background-color: #f06c71;
-        color: #fff;
-        padding: 10px;
-      }
-    </style>
-    <div class="container">
-      
-                      <h3>Change Log</h3>
-	                <strong>Version 2.9.2 - 5 October, 2021</strong>
+            .container {
+                  max-width: 700px;
+                  margin: auto;
+                  padding: 15px;
+                  background-color: #fff;
+            }
+
+            pre {
+                  background-color: #f5f5f5;
+                  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f5f5f5), color-stop(50%, #e6e6e6));
+                  background-image: -webkit-linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
+                  background-image: linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
+                  background-size: 38px 38px;
+                  border: 1px solid #eee;
+                  display: block;
+                  line-height: 19px;
+                  margin-bottom: 10px;
+                  overflow: visible;
+                  overflow-y: hidden;
+                  padding: 0 0 0 4px;
+                  margin-top: 5px;
+            }
+
+            .red-color {
+                  background-color: #f06c71;
+                  color: #fff;
+                  padding: 10px;
+            }
+      </style>
+      <div class="container">
+            <h3>Change Log</h3>
+            <strong>Version 3.0 - 23 November, 2021 </strong>
+
+            <pre>[Added] New option to remove specific task statuses from specific projects.
+[Added] New option to open the estimate publicly.
+[Added] New template variables to show signature info in contract.
+[Added] Staff can sign contract.
+[Added] New role permission to give a team member access to specific client groups.
+[Added] Variables to use the custom fields in the contract and proposals.
+[Added] Plugin hook inside head tag
+[Added] Plugin hooks for notifications
+[Added] Plugin hooks signup page extension
+[Added] Plugin hooks after sign in
+[Added] Plugin hooks for before sign out
+[Added] Plugin hook in dashboard
+[Added] Custom field filter in timesheet summary page
+[Added] Voting system to knowledgeable article view
+[Added] Input order quantity by text box from the cart
+[Added] New option to delete batch files in projects.
+[Added] Files in events
+[Updated] After making task done or stop timer it should stay on same page.
+[Fixed] Bug on left menu
+[Fixed] Ticket creator notification problem.
+[Fixed] Bug on custom fields
+[Fixed] Error in task notification.
+[Fixed] Email bcc option on invoice should work when sending the recurring invoice via cron job
+[Fixed] Open in google calendar not working for custom calendars
+[Fixed] Signature upload not working with drive
+[Fixed] When adding contact, it shows infinity loader.
+[Fixed] Expenses monthly filter is not working
+[Fixed] Invoice tab is showing in projects even if not permitted
+[Fixed] Google event link open is not working.
+[Fixed] Bug on file editing.
+[Fixed] Fix title of notification for public estimate, contract and proposal
+[Fixed] Don't show removed users in notification recipient list in the settings.
+[Fixed] Invoice value is not showing
+[Fixed] Default template changing is not working in contract.
+[Fixed] Error in firefox
+[Fixed] Bug in leads sorting
+[Fixed] Bug in RTL UI
+[Fixed] Fix some responsive issues
+[Fixed] Site logo can't be larger.			
+</pre>
+
+
+
+            <strong>Version 2.9.2 - 5 October, 2021</strong>
             <pre>
 [Added] Plugin hook to show a view inside layout.
 [Added] Plugin hook for Insert/Update/Delete operations.
@@ -54,13 +100,14 @@
 [Fixed] Custom field rich textbox not rendered correctly.
 [Fixed] Don't show the invoices tab in project details page if the invoice module is disabled.
             </pre>
-				<strong>2.9.1 - 28 September, 2021</strong>
-<pre>
+
+            <strong>2.9.1 - 28 September, 2021</strong>
+            <pre>
 [Fixed] Notification not working.
 [Fixed] Completed tasks deadline should not be red. 
-</pre>
-                <strong>Version 2.9 - 24 September, 2021 </strong>
-<pre>	
+            </pre>
+            <strong>Version 2.9 - 24 September, 2021 </strong>
+            <pre>
 [Added] Contract module				
 [Added] New option to easily access tickets from the list view
 [Added] Color picker to select different color settings
@@ -89,8 +136,11 @@
 [Fixed] Invoice reminders issue
 [Fixed] Can't add large text on pages
 </pre>
-      <strong>Version 1.0 - 25 Mar, 2016 </strong>
-      <pre>Initial release </pre>
-    </div>
-  </body>
+
+
+            <strong>Version 1.0 - 25 Mar, 2016 </strong>
+            <pre>Initial release </pre>
+      </div>
+</body>
+
 </html>
