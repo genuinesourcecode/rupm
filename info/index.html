@@ -7,47 +7,73 @@
 
 <body>
       <style type="text/css">
-            body {
-                  background: #E5E9EC;
-                  font-family: arial;
-                  color: #444;
-            }
+body {
+      background: #E5E9EC;
+      font-family: arial;
+      color: #444;
+}
 
-            .container {
-                  max-width: 700px;
-                  margin: auto;
-                  padding: 15px;
-                  background-color: #fff;
-            }
+.container {
+      max-width: 700px;
+      margin: auto;
+      padding: 15px;
+      background-color: #fff;
+}
 
-            pre {
-                  background-color: #f5f5f5;
-                  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f5f5f5), color-stop(50%, #e6e6e6));
-                  background-image: -webkit-linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
-                  background-image: linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
-                  background-size: 38px 38px;
-                  border: 1px solid #eee;
-                  display: block;
-                  line-height: 19px;
-                  margin-bottom: 10px;
-                  overflow: visible;
-                  overflow-y: hidden;
-                  padding: 0 0 0 4px;
-                  margin-top: 5px;
-            }
+pre {
+      background-color: #f5f5f5;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f5f5f5), color-stop(50%, #e6e6e6));
+      background-image: -webkit-linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
+      background-image: linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
+      background-size: 38px 38px;
+      border: 1px solid #eee;
+      display: block;
+      line-height: 19px;
+      margin-bottom: 10px;
+      overflow: visible;
+      overflow-y: hidden;
+      padding: 0 0 0 4px;
+      margin-top: 5px;
+}
 
-            .red-color {
-                  background-color: #f06c71;
-                  color: #fff;
-                  padding: 10px;
-            }
+.red-color {
+      background-color: #f06c71;
+      color: #fff;
+      padding: 10px;
+}
       </style>
       <div class="container">
-            <h3>Change Log</h3>
-            
-            
-            <strong>Version 3.2.2 – 23 June, 2022</strong>
-             <pre>
+
+<h3>Change Log</h3>
+
+
+<strong> Version 3.3 – 3 September, 2022</strong>
+<pre>
+[Added] Add new option in project clone.
+[Added] Include search by custom fields in server side tables. 
+[Added] Two new role permission settings for projects.
+[Added] Send button for chat mobile view.
+[Added] Show task checklist completed count on kanban view.
+[Updated] Bootstrap to latest version.
+[Updated] Codeigniter to latest version.
+[Updated] Move RTL settings in language file.
+[Updated] Show only own tasks in timesheet timelog add/edit modal.
+[Updated] Stripe API to latest version.
+[Fixed] Error on task details modal.
+[Fixed] In project, don't show the save and continue button when logged in as client.
+[Fixed] Recently move to Done filter in tasks.
+[Fixed] Ticket template edit/delete is not working for team members.
+[Fixed] Added protection for some XSS issues.
+[Fixed] Activity log encoding problem. 
+[Fixed] Currency conversion is not working in income expenses chart.
+[Fixed] Bug in sub task.
+[Fixed] Custom fields in invoices list export.
+[Fixed] Tickets last activity sort is not working in projects. 
+</pre>
+
+
+<strong>Version 3.2.2 – 23 June, 2022</strong>
+<pre>
 [Fixed] Bug on timesheet edit
 [Fixed] Mini left menu design issue
 [Fixed] Large text issue on proposal and contract
@@ -109,10 +135,10 @@
 [Fixed] Invoice tab in client portal. 
 [Fixed] Ticket sorting is not working.
 [Fixed] Contract clone is not working.
-             </pre>
+ </pre>
 
-            <strong>Version 3.1 – 15 February, 2022 </strong>
-            <pre>
+<strong>Version 3.1 – 15 February, 2022 </strong>
+<pre>
 [Added] Copy paste screenshots in comments.
 [Added] Task priority settings.
 [Added] Item import functionality.
@@ -147,16 +173,16 @@
 [Fixed] Bug on tasks kanban.
 [Fixed] Hide milestones dropdown on client portal based on permission.
 [Fixed] Validate date when import any custom field or any date.
-            </pre>
+</pre>
 
-            <strong>Version 3.0.1 - 25 November, 2021 </strong>
-            <pre>
+<strong>Version 3.0.1 - 25 November, 2021 </strong>
+<pre>
 [Fixed] Notification Not working
-            </pre>
+</pre>
 
-            <strong>Version 3.0 - 23 November, 2021 </strong>
+<strong>Version 3.0 - 23 November, 2021 </strong>
 
-            <pre>[Added] New option to remove specific task statuses from specific projects.
+<pre>[Added] New option to remove specific task statuses from specific projects.
 [Added] New option to open the estimate publicly.
 [Added] New template variables to show signature info in contract.
 [Added] Staff can sign contract.
@@ -199,8 +225,8 @@
 
 
 
-            <strong>Version 2.9.2 - 5 October, 2021</strong>
-            <pre>
+<strong>Version 2.9.2 - 5 October, 2021</strong>
+<pre>
 [Added] Plugin hook to show a view inside layout.
 [Added] Plugin hook for Insert/Update/Delete operations.
 [Added] Show category in project file edit modal.
@@ -209,15 +235,15 @@
 [Fixed] Payment methods are showing on invoices even that are not enabled.
 [Fixed] Custom field rich textbox not rendered correctly.
 [Fixed] Don't show the invoices tab in project details page if the invoice module is disabled.
-            </pre>
+</pre>
 
-            <strong>2.9.1 - 28 September, 2021</strong>
-            <pre>
+<strong>2.9.1 - 28 September, 2021</strong>
+<pre>
 [Fixed] Notification not working.
 [Fixed] Completed tasks deadline should not be red. 
-            </pre>
-            <strong>Version 2.9 - 24 September, 2021 </strong>
-            <pre>
+</pre>
+<strong>Version 2.9 - 24 September, 2021 </strong>
+<pre>
 [Added] Contract module				
 [Added] New option to easily access tickets from the list view
 [Added] Color picker to select different color settings
@@ -248,8 +274,8 @@
 </pre>
 
 
-            <strong>Version 1.0 - 25 Mar, 2016 </strong>
-            <pre>Initial release </pre>
+<strong>Version 1.0 - 25 Mar, 2016 </strong>
+<pre>Initial release </pre>
       </div>
 </body>
 
