@@ -7,334 +7,346 @@
 
 <body>
       <style type="text/css">
-body {
-      background: #E5E9EC;
-      font-family: arial;
-      color: #444;
-}
+            body {
+                  background: #E5E9EC;
+                  font-family: arial;
+                  color: #444;
+            }
 
-.container {
-      max-width: 700px;
-      margin: auto;
-      padding: 15px;
-      background-color: #fff;
-}
+            .container {
+                  max-width: 700px;
+                  margin: auto;
+                  padding: 15px;
+                  background-color: #fff;
+            }
 
-pre {
-      background-color: #f5f5f5;
-      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f5f5f5), color-stop(50%, #e6e6e6));
-      background-image: -webkit-linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
-      background-image: linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
-      background-size: 38px 38px;
-      border: 1px solid #eee;
-      display: block;
-      line-height: 19px;
-      margin-bottom: 10px;
-      overflow: visible;
-      overflow-y: hidden;
-      padding: 0 0 0 4px;
-      margin-top: 5px;
-}
+            pre {
+                  background-color: #f5f5f5;
+                  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f5f5f5), color-stop(50%, #e6e6e6));
+                  background-image: -webkit-linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
+                  background-image: linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
+                  background-size: 38px 38px;
+                  border: 1px solid #eee;
+                  display: block;
+                  line-height: 19px;
+                  margin-bottom: 10px;
+                  overflow: visible;
+                  overflow-y: hidden;
+                  padding: 0 0 0 4px;
+                  margin-top: 5px;
+            }
 
-.red-color {
-      background-color: #f06c71;
-      color: #fff;
-      padding: 10px;
-}
+            .red-color {
+                  background-color: #f06c71;
+                  color: #fff;
+                  padding: 10px;
+            }
       </style>
-      <div class="container">
+      
+<div class="container">
+                 
+      <h3>Change Log</h3>
 
-<h3>Change Log</h3>
+      <strong>Version 3.4.1 – 02 April, 2023</strong>
+      <pre>
+      [Updated] Added pagination in tasks kanban page to improve loading speed
+      [Updated] Description should not be required in event
+      [Fixed] Subscription item is not loading and saving issues
+      [Fixed] Missing invoice logo issue
+      [Fixed] Error in custom payment method saving
+      [Fixed] URL shows double slash
+      [Fixed] Error in file upload
+      [Fixed] Error in signup page
+      </pre>
 
-<strong>Version 3.4 – 25 March, 2023</strong>
-<pre>
-[Added] Subscriptions module
-[Added] Leads overview widget
-[Added] My tasks overview widget
-[Added] Option to merge 2 tickets into one
-[Added] Show tasks count and percentage in milestone
-[Added] Option to add 2nd reminder for invoice due date and overdue
-[Added] New email templates for different types of task notifications
-[Added] New permission to see notes in client portal
-[Added] GST Number in client profile and show on estimate and invoice
-[Added] Option to delete the ticket comments
-[Added] New email template for announcement notification
-[Added] Option to increase the kanban board size
-[Added] Download button for the note files
-[Added] Some new options in project cloning
-[Added] Show completed sub tasks count on main task on the kanban view
-[Added] Show parent task title on sub tasks on the kanban view.
-[Added] Role permission for client feedback
-[Added] Estimate reference in the invoice
-[Added] Option to show next and previous files in project files.
-[Added] Use main recipient's language to send invoice
-[Added] New template for invoice, estimate, order etc. 
-[Added] Logo for companies to use in invoice, estimate, order etc.
-[Updated] Remove logo upload option in invoice, estimate, order settings
-[Updated] Update Codeigniter to latest v4.3.2
-[Updated] Don't show project dropdown in expense modal of project details page
-[Updated] In add payment modal, show the remaining balance in the amount field
-[Updated] Improve UX of checklist in task details modal
-[Updated] Don't show inactive members in the event share with dropdown
-[Updated] Improve responsive design for mobile devices 
-[Updated] Add more information on the All timesheets widget
-[Updated] Include the notes and hours in the timesheet export
-[Updated] User should not be able to open timer on same task while the timer is running
-[Updated] Integrate single Google API for Calendar and let other users to use that
-[Updated] Make the lead contact email as optional
-[Updated] Show the team members overview widget for allowed members
-[Updated] Update imap libraries
-[Updated] Reflect the client access permission settings in add/edit project modal client dropdown list
-[Updated] Update settings for Microsoft IMAP, SMTP
-[Updated] Implement REST API for Paypal (Need to re-setup the PayPal payment method settings)
-[Fixed] Missing variables in the email templates 
-[Fixed] Wrong payment calculation
-[Fixed] Non-admin user can't access proposal templates even after permission
-[Fixed] Ticket sorting is not working
-[Fixed] Invoice item sorting is not working
-[Fixed] Don't show the client dropdown for the internal project cloning
-[Fixed] Some issues in RTL template
-[Fixed] Bug in client task update
-[Fixed] Non-project member user got project notification 
-[Fixed] Last seen Team Members and last seen Customers widget
-[Fixed] Reminder icon is missing in mobile view
-[Fixed] Bug in public estimates
-[Fixed] Bug in invoice payment confirmation template
-[Fixed] Bug in checklist count.
-[Fixed] After adding a payment on invoices list, it's removing the monthly filter
-[Fixed] Error in proposal invoice conversion
-</pre>
+      <strong>Version 3.4 – 25 March, 2023</strong>
+      <pre>
+      [Added] Subscriptions module
+      [Added] Leads overview widget
+      [Added] My tasks overview widget
+      [Added] Option to merge 2 tickets into one
+      [Added] Show tasks count and percentage in milestone
+      [Added] Option to add 2nd reminder for invoice due date and overdue
+      [Added] New email templates for different types of task notifications
+      [Added] New permission to see notes in client portal
+      [Added] GST Number in client profile and show on estimate and invoice
+      [Added] Option to delete the ticket comments
+      [Added] New email template for announcement notification
+      [Added] Option to increase the kanban board size
+      [Added] Download button for the note files
+      [Added] Some new options in project cloning
+      [Added] Show completed sub tasks count on main task on the kanban view
+      [Added] Show parent task title on sub tasks on the kanban view.
+      [Added] Role permission for client feedback
+      [Added] Estimate reference in the invoice
+      [Added] Option to show next and previous files in project files.
+      [Added] Use main recipient's language to send invoice
+      [Added] New template for invoice, estimate, order etc. 
+      [Added] Logo for companies to use in invoice, estimate, order etc.
+      [Updated] Remove logo upload option in invoice, estimate, order settings
+      [Updated] Update Codeigniter to latest v4.3.2
+      [Updated] Don't show project dropdown in expense modal of project details page
+      [Updated] In add payment modal, show the remaining balance in the amount field
+      [Updated] Improve UX of checklist in task details modal
+      [Updated] Don't show inactive members in the event share with dropdown
+      [Updated] Improve responsive design for mobile devices 
+      [Updated] Add more information on the All timesheets widget
+      [Updated] Include the notes and hours in the timesheet export
+      [Updated] User should not be able to open timer on same task while the timer is running
+      [Updated] Integrate single Google API for Calendar and let other users to use that
+      [Updated] Make the lead contact email as optional
+      [Updated] Show the team members overview widget for allowed members
+      [Updated] Update imap libraries
+      [Updated] Reflect the client access permission settings in add/edit project modal client dropdown list
+      [Updated] Update settings for Microsoft IMAP, SMTP
+      [Updated] Implement REST API for Paypal (Need to re-setup the PayPal payment method settings)
+      [Fixed] Missing variables in the email templates 
+      [Fixed] Wrong payment calculation
+      [Fixed] Non-admin user can't access proposal templates even after permission
+      [Fixed] Ticket sorting is not working
+      [Fixed] Invoice item sorting is not working
+      [Fixed] Don't show the client dropdown for the internal project cloning
+      [Fixed] Some issues in RTL template
+      [Fixed] Bug in client task update
+      [Fixed] Non-project member user got project notification 
+      [Fixed] Last seen Team Members and last seen Customers widget
+      [Fixed] Reminder icon is missing in mobile view
+      [Fixed] Bug in public estimates
+      [Fixed] Bug in invoice payment confirmation template
+      [Fixed] Bug in checklist count.
+      [Fixed] After adding a payment on invoices list, it's removing the monthly filter
+      [Fixed] Error in proposal invoice conversion
+      </pre>
 
-<strong> Version 3.3 – 3 September, 2022</strong>
-<pre>
-[Added] Add new option in project clone.
-[Added] Include search by custom fields in server side tables. 
-[Added] Two new role permission settings for projects.
-[Added] Send button for chat mobile view.
-[Added] Show task checklist completed count on kanban view.
-[Updated] Bootstrap to latest version.
-[Updated] Codeigniter to latest version.
-[Updated] Move RTL settings in language file.
-[Updated] Show only own tasks in timesheet timelog add/edit modal.
-[Updated] Stripe API to latest version.
-[Fixed] Error on task details modal.
-[Fixed] In project, don't show the save and continue button when logged in as client.
-[Fixed] Recently move to Done filter in tasks.
-[Fixed] Ticket template edit/delete is not working for team members.
-[Fixed] Added protection for some XSS issues.
-[Fixed] Activity log encoding problem. 
-[Fixed] Currency conversion is not working in income expenses chart.
-[Fixed] Bug in sub task.
-[Fixed] Custom fields in invoices list export.
-[Fixed] Tickets last activity sort is not working in projects. 
-</pre>
-
-
-<strong>Version 3.2.2 – 23 June, 2022</strong>
-<pre>
-[Fixed] Bug on timesheet edit
-[Fixed] Mini left menu design issue
-[Fixed] Large text issue on proposal and contract
-[Fixed] Invoice overview widget currency format not working
-[Fixed] Default language is not working
-[Fixed] Error in team members left menu
-[Fixed] Task status order is incorrect in the tasks overview widget
-[Fixed] Income vs expenses widget tool tip
-[Fixed] Timesheet total is incorrect
-[Added] Same client contact can be added to multiple clients.
-[Added] New module for reminders.
-[Added] Invoice overview widget.
-[Added] All tasks overview widget.
-[Added] Team members overview widget.
-[Added] Last announcement overview widget.
-[Added] Projects overview widget.
-[Added] Next reminder widget.
-[Added] Option to add new templates for different languages.
-[Added] Send email notification based on user language for available templates. 
-[Added] Plugin hooks in files.
-[Added] Show total after discount in the invoice, estimate, order, proposal and contract.
-[Added] Embeded form for lead collection from external websites. 
-[Added] Option to set response type after lead form submission. 
-[Added] Option to create internal project.
-[Added] New email template for payment confirmation which are added by team members.
-[Added] Option to use multi language in the custom fields.
-[Added] Option to use multi language in the left menu.
-[Added] Estimate sent statistics chart
-[Added] New variables in the email notification templates.
-[Added] Option to select client account type.
-[Added] New option in gender "Other".
-[Added] A print button in estimate preview.
-[Updated] Don't close modal when clicking on outside.
-[Updated] Income vs expenses widget.
-[Updated] Ticket status widget.
-[Updated] Timesheet edit permission.
-[Updated] Re-design default dashboard.
-[Updated] Copy the sub tasks also when create the recurring tasks.
-[Updated] Copy the sub task's checklists when clone any task.
-[Updated] Client should not be able to add project file categories.
-[Updated] Some UI design improvement.
-[Updated] Upgrade codeigniter to 4.1.9
-[Updated] Serverside datatable for clients, client contacts, leads, tasks and tickets.
-[Updated] Copy project settings when clone any project.
-[Updated] Show attached files of contract to clients.
-[Fixed] Task view time log for clients.
-[Fixed] Don't print useless text in estimate request table.
-[Fixed] Bug on task checklist templates and groups.
-[Fixed] Custom field issue in team member's expense.
-[Fixed] Contract and proposal initial serial number setting is not working.
-[Fixed] Bug on the store page.
-[Fixed] Error in file preview.
-[Fixed] Bug in tickets.
-[Fixed] Labels are not working if there is any comma.
-[Fixed] Accept contract by public URL not working.
-[Fixed] Item selection issue from estimate/invoice/order etc.
-[Fixed] Line break isn't working in activity logs
-[Fixed] Client import is not working in php 8.1.5
-[Fixed] Invoice tab in client portal. 
-[Fixed] Ticket sorting is not working.
-[Fixed] Contract clone is not working.
- </pre>
-
-<strong>Version 3.1 – 15 February, 2022 </strong>
-<pre>
-[Added] Copy paste screenshots in comments.
-[Added] Task priority settings.
-[Added] Item import functionality.
-[Added] Leave import functionality.
-[Added] Expense import functionality.
-[Added] Task import functionality.
-[Added] In the project files add new modal, add option to select custom fields.
-[Added] Show tasks count in the kanban columns.
-[Added] Option to set default custom dashboard for all members. 
-[Added] Checklist group settings settings to set any group of check list and select the group in task checklist creation.
-[Added] Option to upload image in help/knowledge base article.
-[Added] Some plugins hooks.
-[Added] Added multiple instances support on plugin hooks.
-[Added] Some improvements in UI.
-[Added] Option to attach files in leave application.
-[Added] Upgrade to CI latest version (v4.1.8)
-[Added] Show task ID, project and client title on kanban based on settings.
-[Added] Multi company settings for invoice/estimate/orders etc.
-[Added] Checkout button in store page. 
-[Added] Show last 10 incoming conversations in top bar message icon notification list.
-[Added] Receiver user's name variable in the email template.
-[Added] Summary reports of payments.
-[Added] New role permission in project.
-[Added] Option to duplicate any expense.
-[Added] Usability improvements in payments.
-[Added] On checklist add new modal, show save and add more button like as task modal.
-[Added] Option to choose custom color.
-[Updated] Show pdf preview using iframe instead of google preview.
-[Updated] Show total after discount in invoice/estimate. 
-[Fixed] Bug on unread messages badge on left menu.
-[Fixed] Don't show inactive members in Latest online team members widget.
-[Fixed] Bug on tasks kanban.
-[Fixed] Hide milestones dropdown on client portal based on permission.
-[Fixed] Validate date when import any custom field or any date.
-</pre>
-
-<strong>Version 3.0.1 - 25 November, 2021 </strong>
-<pre>
-[Fixed] Notification Not working
-</pre>
-
-<strong>Version 3.0 - 23 November, 2021 </strong>
-
-<pre>[Added] New option to remove specific task statuses from specific projects.
-[Added] New option to open the estimate publicly.
-[Added] New template variables to show signature info in contract.
-[Added] Staff can sign contract.
-[Added] New role permission to give a team member access to specific client groups.
-[Added] Variables to use the custom fields in the contract and proposals.
-[Added] Plugin hook inside head tag
-[Added] Plugin hooks for notifications
-[Added] Plugin hooks signup page extension
-[Added] Plugin hooks after sign in
-[Added] Plugin hooks for before sign out
-[Added] Plugin hook in dashboard
-[Added] Custom field filter in timesheet summary page
-[Added] Voting system to knowledgeable article view
-[Added] Input order quantity by text box from the cart
-[Added] New option to delete batch files in projects.
-[Added] Files in events
-[Updated] After making task done or stop timer it should stay on same page.
-[Fixed] Bug on left menu
-[Fixed] Ticket creator notification problem.
-[Fixed] Bug on custom fields
-[Fixed] Error in task notification.
-[Fixed] Email bcc option on invoice should work when sending the recurring invoice via cron job
-[Fixed] Open in google calendar not working for custom calendars
-[Fixed] Signature upload not working with drive
-[Fixed] When adding contact, it shows infinity loader.
-[Fixed] Expenses monthly filter is not working
-[Fixed] Invoice tab is showing in projects even if not permitted
-[Fixed] Google event link open is not working.
-[Fixed] Bug on file editing.
-[Fixed] Fix title of notification for public estimate, contract and proposal
-[Fixed] Don't show removed users in notification recipient list in the settings.
-[Fixed] Invoice value is not showing
-[Fixed] Default template changing is not working in contract.
-[Fixed] Error in firefox
-[Fixed] Bug in leads sorting
-[Fixed] Bug in RTL UI
-[Fixed] Fix some responsive issues
-[Fixed] Site logo can't be larger.			
-</pre>
+      <strong> Version 3.3 – 3 September, 2022</strong>
+      <pre>
+      [Added] Add new option in project clone.
+      [Added] Include search by custom fields in server side tables. 
+      [Added] Two new role permission settings for projects.
+      [Added] Send button for chat mobile view.
+      [Added] Show task checklist completed count on kanban view.
+      [Updated] Bootstrap to latest version.
+      [Updated] Codeigniter to latest version.
+      [Updated] Move RTL settings in language file.
+      [Updated] Show only own tasks in timesheet timelog add/edit modal.
+      [Updated] Stripe API to latest version.
+      [Fixed] Error on task details modal.
+      [Fixed] In project, don't show the save and continue button when logged in as client.
+      [Fixed] Recently move to Done filter in tasks.
+      [Fixed] Ticket template edit/delete is not working for team members.
+      [Fixed] Added protection for some XSS issues.
+      [Fixed] Activity log encoding problem. 
+      [Fixed] Currency conversion is not working in income expenses chart.
+      [Fixed] Bug in sub task.
+      [Fixed] Custom fields in invoices list export.
+      [Fixed] Tickets last activity sort is not working in projects. 
+      </pre>
 
 
+      <strong>Version 3.2.2 – 23 June, 2022</strong>
+      <pre>
+      [Fixed] Bug on timesheet edit
+      [Fixed] Mini left menu design issue
+      [Fixed] Large text issue on proposal and contract
+      [Fixed] Invoice overview widget currency format not working
+      [Fixed] Default language is not working
+      [Fixed] Error in team members left menu
+      [Fixed] Task status order is incorrect in the tasks overview widget
+      [Fixed] Income vs expenses widget tool tip
+      [Fixed] Timesheet total is incorrect
+      [Added] Same client contact can be added to multiple clients.
+      [Added] New module for reminders.
+      [Added] Invoice overview widget.
+      [Added] All tasks overview widget.
+      [Added] Team members overview widget.
+      [Added] Last announcement overview widget.
+      [Added] Projects overview widget.
+      [Added] Next reminder widget.
+      [Added] Option to add new templates for different languages.
+      [Added] Send email notification based on user language for available templates. 
+      [Added] Plugin hooks in files.
+      [Added] Show total after discount in the invoice, estimate, order, proposal and contract.
+      [Added] Embeded form for lead collection from external websites. 
+      [Added] Option to set response type after lead form submission. 
+      [Added] Option to create internal project.
+      [Added] New email template for payment confirmation which are added by team members.
+      [Added] Option to use multi language in the custom fields.
+      [Added] Option to use multi language in the left menu.
+      [Added] Estimate sent statistics chart
+      [Added] New variables in the email notification templates.
+      [Added] Option to select client account type.
+      [Added] New option in gender "Other".
+      [Added] A print button in estimate preview.
+      [Updated] Don't close modal when clicking on outside.
+      [Updated] Income vs expenses widget.
+      [Updated] Ticket status widget.
+      [Updated] Timesheet edit permission.
+      [Updated] Re-design default dashboard.
+      [Updated] Copy the sub tasks also when create the recurring tasks.
+      [Updated] Copy the sub task's checklists when clone any task.
+      [Updated] Client should not be able to add project file categories.
+      [Updated] Some UI design improvement.
+      [Updated] Upgrade codeigniter to 4.1.9
+      [Updated] Serverside datatable for clients, client contacts, leads, tasks and tickets.
+      [Updated] Copy project settings when clone any project.
+      [Updated] Show attached files of contract to clients.
+      [Fixed] Task view time log for clients.
+      [Fixed] Don't print useless text in estimate request table.
+      [Fixed] Bug on task checklist templates and groups.
+      [Fixed] Custom field issue in team member's expense.
+      [Fixed] Contract and proposal initial serial number setting is not working.
+      [Fixed] Bug on the store page.
+      [Fixed] Error in file preview.
+      [Fixed] Bug in tickets.
+      [Fixed] Labels are not working if there is any comma.
+      [Fixed] Accept contract by public URL not working.
+      [Fixed] Item selection issue from estimate/invoice/order etc.
+      [Fixed] Line break isn't working in activity logs
+      [Fixed] Client import is not working in php 8.1.5
+      [Fixed] Invoice tab in client portal. 
+      [Fixed] Ticket sorting is not working.
+      [Fixed] Contract clone is not working.
+      </pre>
 
-<strong>Version 2.9.2 - 5 October, 2021</strong>
-<pre>
-[Added] Plugin hook to show a view inside layout.
-[Added] Plugin hook for Insert/Update/Delete operations.
-[Added] Show category in project file edit modal.
-[Updated] Parent task can't be marked as done if there is any sub task which is not done yet.
-[Fixed] Client and leads notes should be editable by the users who has access.
-[Fixed] Payment methods are showing on invoices even that are not enabled.
-[Fixed] Custom field rich textbox not rendered correctly.
-[Fixed] Don't show the invoices tab in project details page if the invoice module is disabled.
-</pre>
+      <strong>Version 3.1 – 15 February, 2022 </strong>
+      <pre>
+      [Added] Copy paste screenshots in comments.
+      [Added] Task priority settings.
+      [Added] Item import functionality.
+      [Added] Leave import functionality.
+      [Added] Expense import functionality.
+      [Added] Task import functionality.
+      [Added] In the project files add new modal, add option to select custom fields.
+      [Added] Show tasks count in the kanban columns.
+      [Added] Option to set default custom dashboard for all members. 
+      [Added] Checklist group settings settings to set any group of check list and select the group in task checklist creation.
+      [Added] Option to upload image in help/knowledge base article.
+      [Added] Some plugins hooks.
+      [Added] Added multiple instances support on plugin hooks.
+      [Added] Some improvements in UI.
+      [Added] Option to attach files in leave application.
+      [Added] Upgrade to CI latest version (v4.1.8)
+      [Added] Show task ID, project and client title on kanban based on settings.
+      [Added] Multi company settings for invoice/estimate/orders etc.
+      [Added] Checkout button in store page. 
+      [Added] Show last 10 incoming conversations in top bar message icon notification list.
+      [Added] Receiver user's name variable in the email template.
+      [Added] Summary reports of payments.
+      [Added] New role permission in project.
+      [Added] Option to duplicate any expense.
+      [Added] Usability improvements in payments.
+      [Added] On checklist add new modal, show save and add more button like as task modal.
+      [Added] Option to choose custom color.
+      [Updated] Show pdf preview using iframe instead of google preview.
+      [Updated] Show total after discount in invoice/estimate. 
+      [Fixed] Bug on unread messages badge on left menu.
+      [Fixed] Don't show inactive members in Latest online team members widget.
+      [Fixed] Bug on tasks kanban.
+      [Fixed] Hide milestones dropdown on client portal based on permission.
+      [Fixed] Validate date when import any custom field or any date.
+      </pre>
 
-<strong>2.9.1 - 28 September, 2021</strong>
-<pre>
-[Fixed] Notification not working.
-[Fixed] Completed tasks deadline should not be red. 
-</pre>
-<strong>Version 2.9 - 24 September, 2021 </strong>
-<pre>
-[Added] Contract module				
-[Added] New option to easily access tickets from the list view
-[Added] Color picker to select different color settings
-[Added] Sorting option in payment methods
-[Added] In tasks quick filter list, add new option for recurring tasks
-[Added] Option to download expenses files from the list view
-[Added] Show project wise invoices tab in client portal
-[Added] Show role select option when invite any team member
-[Added] New filter option to show sub tasks from parent task
-[Added] Users should be able to upload files during order
-[Added] New settings option to show/hide custom fields in tasks kanban view
-[Added] Show custom field filter on kanban view
-[Added] Show page title based on active view
-[Added] Show start date and deadline in task kanban view
-[Added] Show sub tasks progress bar in parent task details page
-[Added] Show the task url in browser address when opening task details modal
-[Added] Signed date for all kinds of e-signing
-[Updated] Improve client creation process
-[Updated] Upgrade codeigniter to v4.1.3
-[Updated] Upgrade to Bootstrap v5.1.0
-[Updated] Some UI imporovements
-[Fixed] Bug on estimate custom fields
-[Fixed] Project files custom fields are not visible in table
-[Fixed] Tasks count widget in dashboard
-[Fixed] Can't update the lead contact info
-[Fixed] Invoice reminders issue
-[Fixed] Can't add large text on pages
-</pre>
+      <strong>Version 3.0.1 - 25 November, 2021 </strong>
+      <pre>
+      [Fixed] Notification Not working
+      </pre>
 
+      <strong>Version 3.0 - 23 November, 2021 </strong>
 
-<strong>Version 1.0 - 25 Mar, 2016 </strong>
-<pre>Initial release </pre>
-      </div>
+      <pre>
+      [Added] New option to remove specific task statuses from specific projects.
+      [Added] New option to open the estimate publicly.
+      [Added] New template variables to show signature info in contract.
+      [Added] Staff can sign contract.
+      [Added] New role permission to give a team member access to specific client groups.
+      [Added] Variables to use the custom fields in the contract and proposals.
+      [Added] Plugin hook inside head tag
+      [Added] Plugin hooks for notifications
+      [Added] Plugin hooks signup page extension
+      [Added] Plugin hooks after sign in
+      [Added] Plugin hooks for before sign out
+      [Added] Plugin hook in dashboard
+      [Added] Custom field filter in timesheet summary page
+      [Added] Voting system to knowledgeable article view
+      [Added] Input order quantity by text box from the cart
+      [Added] New option to delete batch files in projects.
+      [Added] Files in events
+      [Updated] After making task done or stop timer it should stay on same page.
+      [Fixed] Bug on left menu
+      [Fixed] Ticket creator notification problem.
+      [Fixed] Bug on custom fields
+      [Fixed] Error in task notification.
+      [Fixed] Email bcc option on invoice should work when sending the recurring invoice via cron job
+      [Fixed] Open in google calendar not working for custom calendars
+      [Fixed] Signature upload not working with drive
+      [Fixed] When adding contact, it shows infinity loader.
+      [Fixed] Expenses monthly filter is not working
+      [Fixed] Invoice tab is showing in projects even if not permitted
+      [Fixed] Google event link open is not working.
+      [Fixed] Bug on file editing.
+      [Fixed] Fix title of notification for public estimate, contract and proposal
+      [Fixed] Don't show removed users in notification recipient list in the settings.
+      [Fixed] Invoice value is not showing
+      [Fixed] Default template changing is not working in contract.
+      [Fixed] Error in firefox
+      [Fixed] Bug in leads sorting
+      [Fixed] Bug in RTL UI
+      [Fixed] Fix some responsive issues
+      [Fixed] Site logo can't be larger.			
+      </pre>
+
+      <strong>Version 2.9.2 - 5 October, 2021</strong>
+      <pre>
+      [Added] Plugin hook to show a view inside layout.
+      [Added] Plugin hook for Insert/Update/Delete operations.
+      [Added] Show category in project file edit modal.
+      [Updated] Parent task can't be marked as done if there is any sub task which is not done yet.
+      [Fixed] Client and leads notes should be editable by the users who has access.
+      [Fixed] Payment methods are showing on invoices even that are not enabled.
+      [Fixed] Custom field rich textbox not rendered correctly.
+      [Fixed] Don't show the invoices tab in project details page if the invoice module is disabled.
+      </pre>
+
+      <strong>2.9.1 - 28 September, 2021</strong>
+      <pre>
+      [Fixed] Notification not working.
+      [Fixed] Completed tasks deadline should not be red. 
+      </pre>
+
+      <strong>Version 2.9 - 24 September, 2021 </strong>
+      <pre>
+      [Added] Contract module				
+      [Added] New option to easily access tickets from the list view
+      [Added] Color picker to select different color settings
+      [Added] Sorting option in payment methods
+      [Added] In tasks quick filter list, add new option for recurring tasks
+      [Added] Option to download expenses files from the list view
+      [Added] Show project wise invoices tab in client portal
+      [Added] Show role select option when invite any team member
+      [Added] New filter option to show sub tasks from parent task
+      [Added] Users should be able to upload files during order
+      [Added] New settings option to show/hide custom fields in tasks kanban view
+      [Added] Show custom field filter on kanban view
+      [Added] Show page title based on active view
+      [Added] Show start date and deadline in task kanban view
+      [Added] Show sub tasks progress bar in parent task details page
+      [Added] Show the task url in browser address when opening task details modal
+      [Added] Signed date for all kinds of e-signing
+      [Updated] Improve client creation process
+      [Updated] Upgrade codeigniter to v4.1.3
+      [Updated] Upgrade to Bootstrap v5.1.0
+      [Updated] Some UI imporovements
+      [Fixed] Bug on estimate custom fields
+      [Fixed] Project files custom fields are not visible in table
+      [Fixed] Tasks count widget in dashboard
+      [Fixed] Can't update the lead contact info
+      [Fixed] Invoice reminders issue
+      [Fixed] Can't add large text on pages
+      </pre>
+
+      <strong>Version 1.0 - 25 Mar, 2016 </strong>
+      <pre>Initial release </pre>
+
+</div>
 </body>
-
 </html>
